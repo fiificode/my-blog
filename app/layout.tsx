@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Outfit, Open_Sans } from "next/font/google";
+import { Outfit, Open_Sans, Ubuntu } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
-const text = Open_Sans({
+const text = Ubuntu({
   subsets: ["latin"],
   variable: "--font-text",
   weight: ["300"],
@@ -27,7 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${text.variable} ${headers.variable}`}>{children}</body>
+      <body className={`${text.variable} ${headers.variable}`}>
+        <Navbar />
+        <main className="max-w-6xl px-8 mx-auto">{children}</main>
+      </body>
     </html>
   );
 }
