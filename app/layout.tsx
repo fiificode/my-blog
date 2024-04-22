@@ -31,7 +31,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${text.variable} ${headers.variable}`}>
         <Navbar />
-        <main className="max-w-6xl px-8 mx-auto">{children}</main>
+        <main className="max-w-6xl px-8 mx-auto min-h-[75dvh]">{children}</main>
         <Footer />
       </body>
     </html>

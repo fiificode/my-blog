@@ -11,7 +11,7 @@ import CoverImage2 from "../../public/cover.jpeg";
 import CoverImage3 from "../../public/cover1.jpg";
 import CoverImage4 from "../../public/cover2.jpg";
 
-export function BentoGridSecondDemo() {
+export function FeaturedPosts() {
   return (
     <BentoGrid className="max-w-8xl mx-auto md:auto-rows-[20rem]">
       {items.map((item, i) => (

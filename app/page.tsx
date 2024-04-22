@@ -1,10 +1,10 @@
-import { BentoGridSecondDemo } from "@/components/featured-posts/featuredPosts";
+import { FeaturedPosts } from "@/components/featured-posts/featuredPosts";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <main>
-      <h1 className="text-4xl font-headers text-center capitalize pt-5">
+      <h1 className="text-xl font-headers text-center capitalize pt-5">
         fiifi Tech Corner
       </h1>
       <p className="font-text text-sm text-center">
@@ -15,7 +15,7 @@ export default function Home() {
       </p>
       <div className="mt-8">
         <h2 className="text-xl font-headers mb-3">Featured Posts</h2>
-        <BentoGridSecondDemo />
+        <FeaturedPosts />
       </div>
     </main>
   );
