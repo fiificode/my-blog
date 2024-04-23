@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit, Open_Sans, Ubuntu } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import { Header } from "@/components/Navbar";
 import Footer from "@/components/footer";
 
 const text = Ubuntu({
@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${text.variable} ${headers.variable}`}>
-        <Navbar />
+        <Header />
         <main className="max-w-6xl px-8 mx-auto min-h-[75dvh]">{children}</main>
         <Footer />
       </body>
